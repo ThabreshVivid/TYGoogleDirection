@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008682111D75CAF0005146EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682101D75CAF0005146EF /* main.m */; };
+		008682141D75CAF0005146EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682131D75CAF0005146EF /* AppDelegate.m */; };
+		0086821A1D75CAF0005146EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008682181D75CAF0005146EF /* Main.storyboard */; };
+		0086821C1D75CAF0005146EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0086821B1D75CAF0005146EF /* Assets.xcassets */; };
+		0086821F1D75CAF0005146EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0086821D1D75CAF0005146EF /* LaunchScreen.storyboard */; };
+		0086822A1D75CAF2005146EF /* TYGoogleDirectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682291D75CAF2005146EF /* TYGoogleDirectionTests.m */; };
+		008682351D75CAF2005146EF /* TYGoogleDirectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682341D75CAF2005146EF /* TYGoogleDirectionUITests.m */; };
+		0086824D1D75CB10005146EF /* AGENCYB_0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 008682421D75CB10005146EF /* AGENCYB_0.TTF */; };
+		0086824E1D75CB10005146EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682441D75CB10005146EF /* ViewController.m */; };
+		0086824F1D75CB10005146EF /* DirectionFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682461D75CB10005146EF /* DirectionFinder.m */; };
+		008682501D75CB10005146EF /* LocationCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682481D75CB10005146EF /* LocationCapture.m */; };
+		008682511D75CB10005146EF /* MultiLocationPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086824A1D75CB10005146EF /* MultiLocationPicker.m */; };
+		008682521D75CB10005146EF /* DirectionDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086824C1D75CB10005146EF /* DirectionDetail.m */; };
+		0086825B1D75CB18005146EF /* TYPlaceSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682541D75CB18005146EF /* TYPlaceSearchViewController.m */; };
+		0086825C1D75CB18005146EF /* TYGooglePlacesApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682561D75CB18005146EF /* TYGooglePlacesApiClient.m */; };
+		0086825D1D75CB18005146EF /* TYGoogleAutoCompleteResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 008682581D75CB18005146EF /* TYGoogleAutoCompleteResult.m */; };
+		0086825E1D75CB18005146EF /* TYGooglePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 0086825A1D75CB18005146EF /* TYGooglePlace.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		008682261D75CAF2005146EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008682041D75CAF0005146EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0086820B1D75CAF0005146EF;
+			remoteInfo = TYGoogleDirection;
+		};
+		008682311D75CAF2005146EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008682041D75CAF0005146EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0086820B1D75CAF0005146EF;
+			remoteInfo = TYGoogleDirection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0086820C1D75CAF0005146EF /* TYGoogleDirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYGoogleDirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		008682101D75CAF0005146EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		008682121D75CAF0005146EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		008682131D75CAF0005146EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		008682191D75CAF0005146EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0086821B1D75CAF0005146EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0086821E1D75CAF0005146EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		008682201D75CAF0005146EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008682251D75CAF2005146EF /* TYGoogleDirectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYGoogleDirectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		008682291D75CAF2005146EF /* TYGoogleDirectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGoogleDirectionTests.m; sourceTree = "<group>"; };
+		0086822B1D75CAF2005146EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008682301D75CAF2005146EF /* TYGoogleDirectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYGoogleDirectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		008682341D75CAF2005146EF /* TYGoogleDirectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYGoogleDirectionUITests.m; sourceTree = "<group>"; };
+		008682361D75CAF2005146EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008682421D75CB10005146EF /* AGENCYB_0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = AGENCYB_0.TTF; sourceTree = "<group>"; };
+		008682431D75CB10005146EF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		008682441D75CB10005146EF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		008682451D75CB10005146EF /* DirectionFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionFinder.h; sourceTree = "<group>"; };
+		008682461D75CB10005146EF /* DirectionFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionFinder.m; sourceTree = "<group>"; };
+		008682471D75CB10005146EF /* LocationCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationCapture.h; sourceTree = "<group>"; };
+		008682481D75CB10005146EF /* LocationCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCapture.m; sourceTree = "<group>"; };
+		008682491D75CB10005146EF /* MultiLocationPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLocationPicker.h; sourceTree = "<group>"; };
+		0086824A1D75CB10005146EF /* MultiLocationPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLocationPicker.m; sourceTree = "<group>"; };
+		0086824B1D75CB10005146EF /* DirectionDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionDetail.h; sourceTree = "<group>"; };
+		0086824C1D75CB10005146EF /* DirectionDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionDetail.m; sourceTree = "<group>"; };
+		008682531D75CB18005146EF /* TYPlaceSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPlaceSearchViewController.h; sourceTree = "<group>"; };
+		008682541D75CB18005146EF /* TYPlaceSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPlaceSearchViewController.m; sourceTree = "<group>"; };
+		008682551D75CB18005146EF /* TYGooglePlacesApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGooglePlacesApiClient.h; sourceTree = "<group>"; };
+		008682561D75CB18005146EF /* TYGooglePlacesApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGooglePlacesApiClient.m; sourceTree = "<group>"; };
+		008682571D75CB18005146EF /* TYGoogleAutoCompleteResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGoogleAutoCompleteResult.h; sourceTree = "<group>"; };
+		008682581D75CB18005146EF /* TYGoogleAutoCompleteResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGoogleAutoCompleteResult.m; sourceTree = "<group>"; };
+		008682591D75CB18005146EF /* TYGooglePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGooglePlace.h; sourceTree = "<group>"; };
+		0086825A1D75CB18005146EF /* TYGooglePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGooglePlace.m; sourceTree = "<group>"; };
+		0086825F1D75CB52005146EF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		008682091D75CAF0005146EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008682221D75CAF2005146EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0086822D1D75CAF2005146EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		008682031D75CAEF005146EF = {
+			isa = PBXGroup;
+			children = (
+				0086820E1D75CAF0005146EF /* TYGoogleDirection */,
+				008682281D75CAF2005146EF /* TYGoogleDirectionTests */,
+				008682331D75CAF2005146EF /* TYGoogleDirectionUITests */,
+				0086820D1D75CAF0005146EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0086820D1D75CAF0005146EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0086820C1D75CAF0005146EF /* TYGoogleDirection.app */,
+				008682251D75CAF2005146EF /* TYGoogleDirectionTests.xctest */,
+				008682301D75CAF2005146EF /* TYGoogleDirectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0086820E1D75CAF0005146EF /* TYGoogleDirection */ = {
+			isa = PBXGroup;
+			children = (
+				008682121D75CAF0005146EF /* AppDelegate.h */,
+				008682131D75CAF0005146EF /* AppDelegate.m */,
+				008682421D75CB10005146EF /* AGENCYB_0.TTF */,
+				008682431D75CB10005146EF /* ViewController.h */,
+				008682441D75CB10005146EF /* ViewController.m */,
+				008682451D75CB10005146EF /* DirectionFinder.h */,
+				008682461D75CB10005146EF /* DirectionFinder.m */,
+				008682471D75CB10005146EF /* LocationCapture.h */,
+				008682481D75CB10005146EF /* LocationCapture.m */,
+				008682491D75CB10005146EF /* MultiLocationPicker.h */,
+				0086824A1D75CB10005146EF /* MultiLocationPicker.m */,
+				0086824B1D75CB10005146EF /* DirectionDetail.h */,
+				0086824C1D75CB10005146EF /* DirectionDetail.m */,
+				008682531D75CB18005146EF /* TYPlaceSearchViewController.h */,
+				008682541D75CB18005146EF /* TYPlaceSearchViewController.m */,
+				008682551D75CB18005146EF /* TYGooglePlacesApiClient.h */,
+				008682561D75CB18005146EF /* TYGooglePlacesApiClient.m */,
+				008682571D75CB18005146EF /* TYGoogleAutoCompleteResult.h */,
+				008682581D75CB18005146EF /* TYGoogleAutoCompleteResult.m */,
+				008682591D75CB18005146EF /* TYGooglePlace.h */,
+				0086825A1D75CB18005146EF /* TYGooglePlace.m */,
+				0086825F1D75CB52005146EF /* PrefixHeader.pch */,
+				008682181D75CAF0005146EF /* Main.storyboard */,
+				0086821B1D75CAF0005146EF /* Assets.xcassets */,
+				0086821D1D75CAF0005146EF /* LaunchScreen.storyboard */,
+				008682201D75CAF0005146EF /* Info.plist */,
+				0086820F1D75CAF0005146EF /* Supporting Files */,
+			);
+			path = TYGoogleDirection;
+			sourceTree = "<group>";
+		};
+		0086820F1D75CAF0005146EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				008682101D75CAF0005146EF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		008682281D75CAF2005146EF /* TYGoogleDirectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				008682291D75CAF2005146EF /* TYGoogleDirectionTests.m */,
+				0086822B1D75CAF2005146EF /* Info.plist */,
+			);
+			path = TYGoogleDirectionTests;
+			sourceTree = "<group>";
+		};
+		008682331D75CAF2005146EF /* TYGoogleDirectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				008682341D75CAF2005146EF /* TYGoogleDirectionUITests.m */,
+				008682361D75CAF2005146EF /* Info.plist */,
+			);
+			path = TYGoogleDirectionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0086820B1D75CAF0005146EF /* TYGoogleDirection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008682391D75CAF2005146EF /* Build configuration list for PBXNativeTarget "TYGoogleDirection" */;
+			buildPhases = (
+				008682081D75CAF0005146EF /* Sources */,
+				008682091D75CAF0005146EF /* Frameworks */,
+				0086820A1D75CAF0005146EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYGoogleDirection;
+			productName = TYGoogleDirection;
+			productReference = 0086820C1D75CAF0005146EF /* TYGoogleDirection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		008682241D75CAF2005146EF /* TYGoogleDirectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0086823C1D75CAF2005146EF /* Build configuration list for PBXNativeTarget "TYGoogleDirectionTests" */;
+			buildPhases = (
+				008682211D75CAF2005146EF /* Sources */,
+				008682221D75CAF2005146EF /* Frameworks */,
+				008682231D75CAF2005146EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				008682271D75CAF2005146EF /* PBXTargetDependency */,
+			);
+			name = TYGoogleDirectionTests;
+			productName = TYGoogleDirectionTests;
+			productReference = 008682251D75CAF2005146EF /* TYGoogleDirectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0086822F1D75CAF2005146EF /* TYGoogleDirectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0086823F1D75CAF2005146EF /* Build configuration list for PBXNativeTarget "TYGoogleDirectionUITests" */;
+			buildPhases = (
+				0086822C1D75CAF2005146EF /* Sources */,
+				0086822D1D75CAF2005146EF /* Frameworks */,
+				0086822E1D75CAF2005146EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				008682321D75CAF2005146EF /* PBXTargetDependency */,
+			);
+			name = TYGoogleDirectionUITests;
+			productName = TYGoogleDirectionUITests;
+			productReference = 008682301D75CAF2005146EF /* TYGoogleDirectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		008682041D75CAF0005146EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = VividInfotech;
+				TargetAttributes = {
+					0086820B1D75CAF0005146EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					008682241D75CAF2005146EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0086820B1D75CAF0005146EF;
+					};
+					0086822F1D75CAF2005146EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0086820B1D75CAF0005146EF;
+					};
+				};
+			};
+			buildConfigurationList = 008682071D75CAF0005146EF /* Build configuration list for PBXProject "TYGoogleDirection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 008682031D75CAEF005146EF;
+			productRefGroup = 0086820D1D75CAF0005146EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0086820B1D75CAF0005146EF /* TYGoogleDirection */,
+				008682241D75CAF2005146EF /* TYGoogleDirectionTests */,
+				0086822F1D75CAF2005146EF /* TYGoogleDirectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0086820A1D75CAF0005146EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0086821F1D75CAF0005146EF /* LaunchScreen.storyboard in Resources */,
+				0086824D1D75CB10005146EF /* AGENCYB_0.TTF in Resources */,
+				0086821C1D75CAF0005146EF /* Assets.xcassets in Resources */,
+				0086821A1D75CAF0005146EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008682231D75CAF2005146EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0086822E1D75CAF2005146EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		008682081D75CAF0005146EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0086824E1D75CB10005146EF /* ViewController.m in Sources */,
+				0086825C1D75CB18005146EF /* TYGooglePlacesApiClient.m in Sources */,
+				008682521D75CB10005146EF /* DirectionDetail.m in Sources */,
+				0086824F1D75CB10005146EF /* DirectionFinder.m in Sources */,
+				008682141D75CAF0005146EF /* AppDelegate.m in Sources */,
+				008682501D75CB10005146EF /* LocationCapture.m in Sources */,
+				0086825D1D75CB18005146EF /* TYGoogleAutoCompleteResult.m in Sources */,
+				008682511D75CB10005146EF /* MultiLocationPicker.m in Sources */,
+				0086825E1D75CB18005146EF /* TYGooglePlace.m in Sources */,
+				008682111D75CAF0005146EF /* main.m in Sources */,
+				0086825B1D75CB18005146EF /* TYPlaceSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008682211D75CAF2005146EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0086822A1D75CAF2005146EF /* TYGoogleDirectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0086822C1D75CAF2005146EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008682351D75CAF2005146EF /* TYGoogleDirectionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		008682271D75CAF2005146EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0086820B1D75CAF0005146EF /* TYGoogleDirection */;
+			targetProxy = 008682261D75CAF2005146EF /* PBXContainerItemProxy */;
+		};
+		008682321D75CAF2005146EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0086820B1D75CAF0005146EF /* TYGoogleDirection */;
+			targetProxy = 008682311D75CAF2005146EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		008682181D75CAF0005146EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				008682191D75CAF0005146EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0086821D1D75CAF0005146EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0086821E1D75CAF0005146EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		008682371D75CAF2005146EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		008682381D75CAF2005146EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0086823A1D75CAF2005146EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = TYGoogleDirection/PrefixHeader.pch;
+				INFOPLIST_FILE = TYGoogleDirection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.TYGoogleDirection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0086823B1D75CAF2005146EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = TYGoogleDirection/PrefixHeader.pch;
+				INFOPLIST_FILE = TYGoogleDirection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.TYGoogleDirection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0086823D1D75CAF2005146EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYGoogleDirectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.TYGoogleDirectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYGoogleDirection.app/TYGoogleDirection";
+			};
+			name = Debug;
+		};
+		0086823E1D75CAF2005146EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYGoogleDirectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.TYGoogleDirectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYGoogleDirection.app/TYGoogleDirection";
+			};
+			name = Release;
+		};
+		008682401D75CAF2005146EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TYGoogleDirectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.TYGoogleDirectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TYGoogleDirection;
+			};
+			name = Debug;
+		};
+		008682411D75CAF2005146EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TYGoogleDirectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VividInfotech.TYGoogleDirectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TYGoogleDirection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		008682071D75CAF0005146EF /* Build configuration list for PBXProject "TYGoogleDirection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008682371D75CAF2005146EF /* Debug */,
+				008682381D75CAF2005146EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008682391D75CAF2005146EF /* Build configuration list for PBXNativeTarget "TYGoogleDirection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0086823A1D75CAF2005146EF /* Debug */,
+				0086823B1D75CAF2005146EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0086823C1D75CAF2005146EF /* Build configuration list for PBXNativeTarget "TYGoogleDirectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0086823D1D75CAF2005146EF /* Debug */,
+				0086823E1D75CAF2005146EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0086823F1D75CAF2005146EF /* Build configuration list for PBXNativeTarget "TYGoogleDirectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008682401D75CAF2005146EF /* Debug */,
+				008682411D75CAF2005146EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 008682041D75CAF0005146EF /* Project object */;
+}
